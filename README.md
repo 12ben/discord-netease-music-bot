@@ -1,4 +1,4 @@
-# Netease Music Bot for Discord - Rewrite
+# Netease Music Bot for Discord - 改了又改
 
 一个功能十分基础的点歌 bot，使用 Python 语言编写
 
