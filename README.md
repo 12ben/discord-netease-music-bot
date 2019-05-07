@@ -5,3 +5,5 @@
 此 bot 依赖于 ffmpeg 和 libopus
 
 此 bot 使用了 [discord.py](https://github.com/Rapptz/discord.py) 库
+
+此 bot 使用了 [网易云音乐 Node.js API service](https://github.com/Binaryify/NeteaseCloudMusicApi) 
