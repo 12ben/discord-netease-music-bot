@@ -57,7 +57,7 @@ class Music(commands.Cog):
                 if retry_count >= 60:
                     # 退出
                     await ctx.voice_client.disconnect()
-                    await ctx.send("Nothing to play.")
+                    await ctx.send("退出播放")
                     return
                 else:
                     # 未达到阈值，计数增加

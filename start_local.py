@@ -37,7 +37,7 @@ class Music(commands.Cog):
         while True:
             # 等待播放结束
             while ctx.voice_client.is_playing():
-                await asyncio.sleep(1)
+               await asyncio.sleep(1)
 
             # 判断队列中是否有未播放的歌曲
             if queueList.is_empty() is False:
@@ -50,7 +50,7 @@ class Music(commands.Cog):
                     .set_footer(text="Length: " + str(musicInfo["musicLength"] + " • " + time.asctime(time.localtime(time.time()))))\
                     .set_thumbnail(url=musicInfo["musicPic"])
                 await ctx.send(embed=embed)
-                source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio(musicInfo["musicFileName"]), volume=0.6)
+                source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio(musicInfo["musicFileName"]), volume=0.4)
                 ctx.voice_client.play(source, after=lambda e: print('Player error: %s' % e) if e else None)
             else:
                 # 无，且计数达到阈值
